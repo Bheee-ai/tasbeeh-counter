@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عداد التسبيح</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .counter {
+            font-size: 2em;
+            margin: 20px;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>عداد التسبيح</h1>
+    <p>اللهم اجعل ثواب هذا التسبيح صدقة جارية عن روح (محمد احمد حامد زياده)</p>
+    <div class="counter" id="counter">0</div>
+    <button onclick="incrementCounter()">سبحان الله</button>
+
+    <script>
+        let count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
